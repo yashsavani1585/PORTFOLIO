@@ -59,7 +59,7 @@ const Header = () => {
 
     
       {isOpen && (
-        <div className="md:hidden bg-gray-900 bg-opacity-95 backdrop-blur-md w-full absolute top-full left-0">
+        <div className="md:hidden bg-gray-900 text-white bg-opacity-95 backdrop-blur-md w-full absolute top-full left-0">
           <div className="flex flex-col items-center py-6 space-y-4 text-lg font-medium">
             {links.map((link) => (
               <button
