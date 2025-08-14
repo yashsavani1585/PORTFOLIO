@@ -15,24 +15,28 @@ const SliderSkill = () => {
     arrows: false,
     dots: false,
     pauseOnHover: true,
-    swipeToSlide: true, // enable touch swipe
+    swipeToSlide: true,
     responsive: [
       {
-        breakpoint: 1280, // xl screens
+        breakpoint: 1280, 
         settings: { slidesToShow: 4 },
       },
       {
-        breakpoint: 1024, // lg screens
+        breakpoint: 1024,
         settings: { slidesToShow: 3 },
       },
       {
-        breakpoint: 768, // md screens
+        breakpoint: 768, 
         settings: { slidesToShow: 2 },
       },
       {
-        breakpoint: 480, // sm screens
+        breakpoint: 480, 
         settings: { slidesToShow: 1 },
       },
+      {
+        breakpoint:320,
+        settings:{ slidesToShow: 1 },
+      }
     ],
   };
 
@@ -54,16 +58,16 @@ const SliderSkill = () => {
 
   return (
     <div className="bg-gray-900 py-10">
-      <div className="max-w-6xl mx-auto px-6  sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-10">
           My Skills
         </h2>
         <Slider {...settings}>
           {skills.map((skill, index) => (
-            <div key={index} className="flex justify-center px-2 sm:px-3">
-              <span className=" text-white px-10 sm:px-8 py-4 rounded-full text-sm sm:text-lg md:text-xl font-semibold  hover:scale-105 transition transform tracking-wide text-center w-full">
+            <div key={index} className="flex justify-center">
+              <div className=" text-white rounded-full px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-sm sm:text-base md:text-lg font-semibold flex items-center justify-center w-full transition-transform transform hover:scale-105">
                 {skill}
-              </span>
+              </div>
             </div>
           ))}
         </Slider>
