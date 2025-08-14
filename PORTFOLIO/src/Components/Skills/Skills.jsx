@@ -4,7 +4,6 @@ import {
   FaNodeJs,
   FaDatabase,
   FaCloudUploadAlt,
-  FaCreditCard,
   FaHtml5,
   FaCss3Alt,
   FaJsSquare,
@@ -19,7 +18,7 @@ import {
   SiTailwindcss,
   SiBootstrap,
   SiRazorpay,
-  SiMysql,
+  SiAngular, // Added Angular icon
 } from "react-icons/si";
 
 const skills = [
@@ -32,6 +31,7 @@ const skills = [
   { name: "HTML5", icon: <FaHtml5 className="text-orange-600 text-4xl" /> },
   { name: "CSS3", icon: <FaCss3Alt className="text-blue-600 text-4xl" /> },
   { name: "JavaScript", icon: <FaJsSquare className="text-yellow-400 text-4xl" /> },
+  { name: "Angular", icon: <SiAngular className="text-red-600 text-4xl" /> }, // Added Angular
   { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-500 text-4xl" /> },
   { name: "Bootstrap", icon: <SiBootstrap className="text-purple-600 text-4xl" /> },
   { name: "Vercel", icon: <SiVercel className="text-black text-4xl" /> },
@@ -50,7 +50,7 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-white text-gray-900 rounded-lg shadow-md p-6 hover:shadow-xl hover:scale-105 transition-transform duration-300"
+            className="flex flex-col items-center text-white rounded-lg  p-6 hover:shadow-xl hover:scale-105 transition-transform duration-300"
           >
             <div className="rounded-full bg-gray-100 p-5 flex items-center justify-center shadow-inner">
               {skill.icon}
