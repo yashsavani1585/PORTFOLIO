@@ -4,16 +4,19 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gray-900 text-white flex items-center justify-center px-6 md:px-20 py-20 md:py-32 min-h-screen">
+    <section className="relative bg-gray-900 text-white flex items-center justify-center px-6 md:px-20 py-20 md:py-32 min-h-30">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
         
+      
         <div className="flex-1 text-center md:text-left space-y-6">
           <h2 className="text-xl md:text-2xl text-orange-500 font-medium">
             Hello<span className="text-orange-400">.</span>
           </h2>
+
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             I'm Yash Savani
           </h1>
+
           <h3 className="text-2xl md:text-4xl font-semibold text-white">
             <span className="text-orange-400">
               <Typewriter
@@ -34,13 +37,11 @@ const Hero = () => {
             </span>
           </h3>
 
+        
           <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
-
-
             <a
-              href="https://drive.google.com/uc?export=download&id=1lA7e-gXYCrcOKbNH1j7Oz_-FYXJJQF4H"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/YASH_SAVANI.pdf"   // File placed in public folder
+              download="YASH_SAVANI.pdf" // Automatically download
               className="border border-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-500 hover:text-white transition duration-300 transform hover:scale-105 inline-block"
             >
               My Resume
@@ -48,6 +49,7 @@ const Hero = () => {
           </div>
         </div>
 
+    
         <div className="flex-1 flex justify-center md:justify-end">
           <div className="relative w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] flex items-center justify-center">
             <img
