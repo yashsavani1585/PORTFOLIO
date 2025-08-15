@@ -54,7 +54,7 @@ const HireMe = () => {
             <div className="flex items-center gap-4">
               <FaEnvelope className="text-blue-400 text-2xl" />
               <a href="mailto:yashsavani1585@example.com" className="hover:underline">
-                yashsavani1585@example.com
+                yashsavani1585@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-4">
